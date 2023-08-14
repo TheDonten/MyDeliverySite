@@ -1,0 +1,14 @@
+
+.main{
+    height: 100%;
+    width: 100%;
+    grid-area: Main;
+    background-color: grey;
+
+    display : grid;
+
+    grid-template-columns: minmax(100px, 80vw) minmax(100px, 20vw);
+
+    grid-template-areas:
+    "Menu Basket";
+}

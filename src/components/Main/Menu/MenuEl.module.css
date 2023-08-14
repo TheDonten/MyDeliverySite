@@ -1,0 +1,43 @@
+
+.MenuEl{
+
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+            "TextName TextName TextName"
+            "Pizza Pizza Pizza"
+            "Sub Count Plus"
+            "ADD ADD ADD";
+}
+
+.NameText{
+    color : red;
+    grid-area : TextName;
+    justify-self: center;
+}
+
+.imagePizza{
+    grid-area: Pizza;
+
+    justify-self: center;
+    max-width: 200px;
+}
+.subButton{
+    grid-area: Sub;
+    cursor: pointer;
+}
+
+
+.countText{
+    grid-area: Count;
+    justify-self: center;
+    align-self: center;
+
+}
+.plusButton{
+    grid-area: Plus;
+
+}
+.addbutton{
+    grid-area: ADD;
+}

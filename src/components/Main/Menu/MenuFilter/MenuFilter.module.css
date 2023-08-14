@@ -1,0 +1,35 @@
+.menuFilter{
+    grid-area: menuFilter;
+    display : grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(35px, 100px);
+    border-bottom: solid 5px black;
+
+}
+.clickablea{
+    display: grid;
+    grid-template-columns: minmax(50px,auto);
+
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text{
+    color: blue;
+    cursor: pointer;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+}
+.textActive{
+    color: gold;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.text:hover {
+    color: gold;
+}

@@ -1,0 +1,6 @@
+
+.nav{
+    grid-area: Nav;
+    background-color: blue;
+    color : wheat;
+}

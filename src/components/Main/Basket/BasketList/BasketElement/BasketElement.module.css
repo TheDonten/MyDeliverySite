@@ -1,0 +1,18 @@
+.BasketElement{
+    display: grid;
+    grid-template-areas: "Image Cost Count";
+    border : black solid;
+
+}
+
+.Image{
+    grid-area: Image;
+}
+
+.Cost {
+    grid-area: Cost;
+}
+
+.Count {
+    grid-area : Count;
+}

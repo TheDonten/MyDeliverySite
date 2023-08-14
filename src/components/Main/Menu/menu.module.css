@@ -1,0 +1,11 @@
+
+.menu{
+    grid-area : Menu;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "menuFilter"
+    "menuInner";
+}

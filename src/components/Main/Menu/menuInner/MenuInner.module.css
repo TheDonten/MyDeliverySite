@@ -1,0 +1,55 @@
+.menuInner{
+    grid-area : menuInner;
+
+    display: grid;
+    overflow-y: auto;
+
+    grid-template-columns: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+    grid-auto-rows: 300px;
+
+    row-gap : 10px;
+    column-gap: 10px;
+}
+
+.MenuEl{
+
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+            "TextName TextName TextName"
+            "Pizza Pizza Pizza"
+            "Sub Count Plus"
+            "ADD ADD ADD";
+}
+
+.NameText{
+    color : red;
+    grid-area : TextName;
+    justify-self: center;
+}
+
+.imagePizza{
+    grid-area: Pizza;
+
+    justify-self: center;
+    max-width: 200px;
+}
+.subButton{
+    grid-area: Sub;
+    cursor: pointer;
+}
+
+
+.countText{
+    grid-area: Count;
+    justify-self: center;
+    align-self: center;
+
+}
+.plusButton{
+    grid-area: Plus;
+
+}
+.addbutton{
+    grid-area: ADD;
+}

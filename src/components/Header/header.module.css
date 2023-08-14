@@ -1,0 +1,6 @@
+
+.header{
+    grid-area: Header;
+    background-color: #61dafb;
+    color: red;
+}
