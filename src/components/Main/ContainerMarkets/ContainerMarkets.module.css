@@ -1,0 +1,36 @@
+.MarketMain{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    overflow-y: auto;
+    grid-template-areas: "Content"
+    "Choose_page";
+
+    grid-template-rows: minmax(90%, max-content) minmax(10%, max-content);
+
+}
+
+
+.content{
+    grid-area: Content;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(200px, auto));
+    grid-auto-rows: 300px;
+}
+
+.choose_page{
+    grid-area: Choose_page;
+    padding: 10px;
+    justify-self : center;
+    align-self: end;
+}
+
+.selected {
+    grid-area: Choose_page;
+    padding: 10px;
+    justify-self : center;
+    align-self: end;
+    font-weight: bold;
+}

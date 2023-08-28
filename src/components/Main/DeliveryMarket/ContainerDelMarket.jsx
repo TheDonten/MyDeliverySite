@@ -1,11 +1,10 @@
 import React from "react";
-import mains from './Main.module.css'
+import mains from './Market.module.css'
 
 import ContainerMenu from "./Menu/ContainerMenu";
 import ContainerBasket from "./Basket/ContainerBasket";
 
-
-const ContainerMain = ({match}) => {
+const ContainerDelMarket = ({match}) => {
 
 
     return (
@@ -19,4 +18,4 @@ const ContainerMain = ({match}) => {
 
 }
 
-export default ContainerMain;
+export default ContainerDelMarket;

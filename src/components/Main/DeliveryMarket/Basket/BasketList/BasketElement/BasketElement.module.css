@@ -15,4 +15,18 @@
 
 .Count {
     grid-area : Count;
+    display : grid;
+    grid-template-areas: "decrement coutIn increment";
+}
+
+.dec{
+    grid-area: decrement;
+}
+.coutIn{
+    grid-area: coutIn;
+    justify-self: center;
+}
+
+.inc {
+    grid-area: increment;
 }

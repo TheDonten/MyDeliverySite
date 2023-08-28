@@ -12,9 +12,16 @@ const BasketElement = (props) =>{
                 Cost
             </div>
             <div className={BasketElements.Count}>
-                {props.Element.count}
+                <button className={BasketElements.dec} onClick={props.DecEl}>
+                    -
+                </button>
+                <div className={BasketElements.coutIn}>
+                    {props.Element.count}
+                </div>
+                <button className={BasketElements.inc} onClick={props.IncEl}>
+                    +
+                </button>
             </div>
-
             <button onClick={props.RemoveEl}>
                 delete
             </button>

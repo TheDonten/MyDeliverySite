@@ -4,3 +4,15 @@
     background-color: blue;
     color : wheat;
 }
+
+.items{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.active {
+    color:gold;
+    text-decoration: none;
+    padding: 10px;
+}

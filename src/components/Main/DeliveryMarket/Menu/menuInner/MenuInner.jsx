@@ -2,13 +2,8 @@
 import React, {useReducer} from "react";
 import menus from './MenuInner.module.css'
 import {useLocation} from "react-router";
-import {postUpdateBasket} from "../../../../redux/redux-main-basket";
+import {ClearBasket, postUpdateBasket} from "../../../../../redux/redux-main-basket";
 // import menusEl from './MenuEl.module.css'
-const localState = {
-    count: 0,
-};
-
-
 
 
 
@@ -19,6 +14,7 @@ const MenuInner = (props) =>{
     //Add dispatch to Redux-Storage
     return(
         <div className={menus.menuInner}>
+                {!props.stateLocale.countObj.length && <p>KAK DELA?</p>}
                 {
                     props.stateLocale.countObj.map((el, index) => {
                         return (<div className={menus.MenuEl}>
@@ -35,7 +31,7 @@ const MenuInner = (props) =>{
                                 <button className={menus.plusButton}
                                         onClick={() => props.dispatchLocale({type: 'INCREMENT', index: index})}>+
                                 </button>
-                                <button className={menus.addbutton} onClick={() => {props.dispatchLocale({type : 'CLEAR', index : index}); props.dispatch(postUpdateBasket({...el}));}}>Add</button>
+                                <button className={menus.addbutton} onClick={() => {props.dispatchLocale({type : 'CLEAR', index : index}); props.dispatch(postUpdateBasket({...el}, props.name)); /*props.dispatch(ClearBasket(props.name));*/}}>Add</button>
                             </div>
                         )
                     })

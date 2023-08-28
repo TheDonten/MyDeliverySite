@@ -1,0 +1,26 @@
+.market_main{
+    display: grid;
+    border: red solid 1px;
+    grid-template-areas:
+            "PNG_Market PNG_Market PNG_Market"
+    "Recall Valuation Order";
+
+    justify-items: center;
+    grid-template-rows: 200px 100px;
+}
+
+.png_market{
+    grid-area: PNG_Market;
+}
+
+.recall{
+    grid-area: Recall;
+}
+
+.valuation{
+    grid-area: Valuation;
+}
+
+.order{
+    grid-area: Order;
+}
